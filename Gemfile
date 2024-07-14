@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "rbs", "~> 3.5"
-
-gem "steep", "~> 1.7"
+gem 'sorbet', :group => :development
+gem 'sorbet-runtime'
+gem 'tapioca', require: false, :group => [:development, :test]
+gem "rubocop", "~> 1.65"
